@@ -1,0 +1,11 @@
+1. Install react router from the terminal by inputing:
+npm install react-router
+
+2. import BrowserRouter, Routes, Route and Link from the React-router in the App.jsx file
+
+3. Wrap the App.jsx return with BrowserRouter
+
+4. Define the routes for the Home.jsx, DetailPage.jsx and the NotFound.jsx
+
+
+the :id enables dynamic routing  and we can use it by import the blogData.js file to the App.jsx file and some sort of rendering, perhaps props?
