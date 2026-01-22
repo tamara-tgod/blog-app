@@ -6,12 +6,6 @@ const blogPosts = [
         content: "This is the full content if the blog post and this is all we have here..."
     },
     {
-        id: 1,
-        title: "My First Blog Post",
-        excerpt: "This is my first ever blog post...",
-        content: "This is the full content if the blog post and this is all we have here..."
-    },
-    {
         id: 2,
         title: "React Routing",
         excerpt: "This is my second ever blog post...",
