@@ -34,6 +34,24 @@
 
     width: 25%;
     padding: .4rem;
-    background-color: blue;
+    background-color: rgb(148, 148, 233);
     border-radius: 1rem;
+}
+
+.post-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.prev-btn,
+.next-btn {
+    text-decoration: none;
+    color: rgb(148, 148, 233);
+}
+
+.bck-home {
+  margin-top: 3rem;
 }

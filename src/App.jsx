@@ -1,20 +1,31 @@
 import "./App.css";
 import { BrowserRouter as BrowserRout, Routes, Route } from "react-router";
-import Home from "./pages/Home";
-import DetailPage from "./pages/DetailPage";
-import NotFound from "./pages/NotFound";
-import blogData from "./data/blogData"
+import { lazy, Suspense } from "react";
+import ErrorBoundaryWrapper from "./components/ErrorBoundary";
+import Navbar from "./components/Navbar";
+import Loading from "./components/Loading";
+
+const Home = lazy(() => import ('./pages/Home'))
+const DetailPage = lazy(() => import ('./pages/DetailPage'))
+const About = lazy(() => import ('./pages/About'))
+const NotFound = lazy(() => import ('./pages/NotFound'))
 
 
 function App() {
   return (
     <>
       <BrowserRout>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/post/:id" element={<DetailPage />} />
-          <Route path="/*" element={<NotFound />} />
-        </Routes>
+       <Navbar />
+        <ErrorBoundaryWrapper>
+          <Suspense fallback={<Loading />}>     
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/post/:id" element={<DetailPage />} />
+            <Route path="/*" element={<NotFound />} />
+            <Route path="/about" element={<About />} />
+          </Routes>
+          </Suspense>
+        </ErrorBoundaryWrapper>
       </BrowserRout>
     </>
   );

@@ -1,16 +1,52 @@
-# React + Vite
+# Blog Application with React Router
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple blog application built with React and React Router, featuring dynamic routing, lazy loading, and error boundaries. 
 
-Currently, two official plugins are available:
+# Features
+- Blog post listing with excerpts
+- Dynamic routing to individual blog post
+- Previous/Next post navigation
+- Error boundary for graceful error handling
+- Lazy loading with Suspense for performance
+- Clean, responsive UI
+- 404 page for invalid routes
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technologies Used
 
-## React Compiler
+- React 
+- React Router DOM
+- Vite 
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Key Concepts Implemented
 
-## Expanding the ESLint configuration
+### Error Boundaries
+- Catches JavaScript errors in component tree
+- Displays fallback 
+- Allows user to recover and navigate away
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+### Lazy Loading & Code Splitting
+- component loaded on-demand
+- Improved initial load performance
+- Suspense component for loading states
+
+
+### Dynamic Routing
+- URL parameters for blog post IDs
+- Previous/Next navigation
+- Conditional rendering based on data availability
+
+
+### Running the project
+``` bash
+npm install
+npm run dev
+```
+
+##
+
+- Class components for Error Boundaries
+- React.lazy() and Suspense for code splitting
+- useParams() hook for accessing URL parameters
+- Conditional rendering patterns
+- Array methods (find, findIndex) for data manipulation
