@@ -13,40 +13,42 @@ A simple blog application built with React and React Router, featuring dynamic r
 
 ## Technologies Used
 
-- React 
+- React 18
 - React Router DOM
 - Vite 
+- JavaScript/JSX
 
-## Key Concepts Implemented
+## Getting Started
 
-### Error Boundaries
-- Catches JavaScript errors in component tree
-- Displays fallback 
-- Allows user to recover and navigate away
+### Prerequisites
+- Node.js 16+ 
+- npm or yarn
 
-
-### Lazy Loading & Code Splitting
-- component loaded on-demand
-- Improved initial load performance
-- Suspense component for loading states
-
-
-### Dynamic Routing
-- URL parameters for blog post IDs
-- Previous/Next navigation
-- Conditional rendering based on data availability
-
-
-### Running the project
-``` bash
+### Installation
+\`\`\`bash
+git clone [your-repo-url]
+cd blog-app
 npm install
 npm run dev
-```
+\`\`\`
 
-##
+## Build
+\`\`\`bash
+npm run build
+npm run preview
+\`\`\`
 
-- Class components for Error Boundaries
-- React.lazy() and Suspense for code splitting
-- useParams() hook for accessing URL parameters
-- Conditional rendering patterns
-- Array methods (find, findIndex) for data manipulation
+## Key Learning Outcomes
+- Implemented React Router v6 with dynamuc routes
+- Built custom Error Boundary component
+- Implemented code splitting with React.lazy and Suspense
+- Managed component state and data flow
+
+
+
+### Author
+
+
+## License
+MIT
+ 
