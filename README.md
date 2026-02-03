@@ -28,7 +28,7 @@ A simple blog application built with React and React Router, featuring dynamic r
 
 ### Installation
 \`\`\`bash
-git clone [your-repo-url]
+git clone [https://github.com/tamara-tgod/blog-app.git]
 cd blog-app
 npm install
 npm run dev
