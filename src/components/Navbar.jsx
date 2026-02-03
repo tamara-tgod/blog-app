@@ -5,7 +5,7 @@ import "../App.css"
 function Navbar() {
   return (
     <div className="navbar">
-      <h2 className="logo">Tamara</h2>
+      <h2 className="logo">tamarä</h2>
       <nav>
         <Link to={"/"} className="nav-link">Home</Link>
         <Link to={"/about"} className="nav-link">About Us</Link>
